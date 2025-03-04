@@ -1,0 +1,96 @@
+body {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('perfomanse.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+nav {
+    background: #1e1e1e;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+nav ul li:nth-child(3) a:hover {
+    border-color: red;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
+
+nav ul li:nth-child(1) a:hover {
+    border-color: #00bfff;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+}
+
+nav ul li:nth-child(2) a:hover {
+    border-color: blue;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.6);
+}
+
+nav ul li:nth-child(4) a:hover {
+    border-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+.info_, .post {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .info_ h1 {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .info_ h1:hover, .author-info p:hover, .post h1:hover, .post p:hover, img:hover{
+    transform: scale(1.1);
+  }
+  
+  .info_ h1, .post h1 {
+    margin-top: 0;
+    color: #ffffff;
+  }
+  
+  .info_ p, .post p {
+    color: #ffffff;
+    line-height: 1.6;
+  }

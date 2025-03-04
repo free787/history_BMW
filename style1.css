@@ -1,0 +1,146 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background: #1e1e1e;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+nav ul li:nth-child(3) a:hover {
+    border-color: red;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
+
+nav ul li:nth-child(1) a:hover {
+    border-color: #00bfff;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+}
+
+nav ul li:nth-child(2) a:hover {
+    border-color: blue;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.6);
+}
+
+nav ul li:nth-child(4) a:hover {
+    border-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+.post-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards; 
+}
+.post-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #121212; 
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.4s ease-in-out;
+    margin-bottom: 30px; 
+}
+.post-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5);
+}
+.photo-container {
+    width: 35%;
+    height: 250px; 
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.photo-container .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+.photo-container:hover .photo {
+    opacity: 0.8;
+}
+.text-container {
+    width: 60%;
+    font-family: 'Montserrat', sans-serif;
+}
+.text-container h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2); 
+}
+.text-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #b3b3b3; 
+}
+
+.post-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #00ffff; 
+    border: 2px solid #00ffff; 
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.post-btn:hover {
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff; 
+    transform: scale(1.05);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
