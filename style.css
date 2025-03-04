@@ -81,7 +81,7 @@ nav ul li:nth-child(4) a:hover {
     transition: transform 0.3s ease-in-out;
   }
   
-  .info_ h1:hover, .author-info p:hover, .post h1:hover, .post p:hover, img:hover{
+  .info_ h1:hover{
     transform: scale(1.1);
   }
   
