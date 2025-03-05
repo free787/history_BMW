@@ -2,8 +2,9 @@ body {
     background-color: #121212;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
+    margin: 0; 
+    
 }
-
 nav {
     background: #1e1e1e;
     padding: 15px;
@@ -22,9 +23,9 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: flex; 
+    align-items: center; 
 }
-
 nav ul li a {
     display: inline-block;
     padding: 12px 20px;
@@ -36,6 +37,7 @@ nav ul li a {
     border: 2px solid transparent;
     transition: transform 0.3s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 nav ul li:nth-child(3) a:hover {
     border-color: red;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
@@ -54,6 +56,11 @@ nav ul li:nth-child(2) a:hover {
 nav ul li:nth-child(4) a:hover {
     border-color: white;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+.logo {
+    width: 90px; 
+    height: auto;
+    margin-right: 100px; 
 }
 .post-container {
     display: flex;
